@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ~ Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ~ Bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ~ Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <!-- ~ Main Style Sheet -->
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+    <title>Shopping Cart - Login</title>
+</head>
+<body>
+    <section class="container my-5 mx-sm-0 mx-5 position-relative overflow-hidden bg-white content-box">
+        <div class="position-absolute z-1 d-flex align-items-center text-center p-5 form-box login">
+            <form id="login-form" class="w-100">
+                <h2 class="fs-1 mb-4">Login</h2>
+                <div class="form-group position-relative mb-4">
+                    <input id="email" type="email" class="form-control" placeholder="Email" required />
+                    <i class="fa-solid fa-envelope position-absolute top-50 translate-middle-y"></i>
+                    <p></p>
+                </div>
+                <div class="form-group position-relative">
+                    <input id="password" type="password" class="form-control" placeholder="Password" required />
+                    <i class="fa-solid fa-lock position-absolute top-50 translate-middle-y"></i>
+                </div>
+                <div class="forgot-link my-3">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn w-100 p-2 text-white shadow fw-semibold main-btn">Login</button>
+                <p class="my-3">or login with social platforms</p>
+                <ul class="social-icons d-flex justify-content-center">
+                    <li class="icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="icon mx-3"><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="position-absolute z-1 d-flex align-items-center text-center p-5 form-box register">
+            <form class="w-100">
+                <h2 class="fs-1 mb-4">Register</h2>
+                <div class="form-group position-relative mb-4">
+                    <input type="text" class="form-control" placeholder="Username" required />
+                    <i class="fa-solid fa-user position-absolute top-50 translate-middle-y"></i>
+                </div>
+                <div class="form-group position-relative mb-4">
+                    <input type="email"  class="form-control" placeholder="Email" required />
+                    <i class="fa-solid fa-envelope position-absolute top-50 translate-middle-y"></i>
+                </div>
+                <div class="form-group position-relative">
+                    <input type="password" class="form-control" placeholder="Password" required />
+                    <i class="fa-solid fa-lock position-absolute top-50 translate-middle-y"></i>
+                </div>
+                <button type="submit" class="btn w-100 p-2 text-white shadow fw-semibold mt-3 main-btn">Register</button>
+                <p class="my-3">or register with social platforms</p>
+                <ul class="social-icons d-flex justify-content-center">
+                    <li class="icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="icon mx-3"><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="toggle-box position-absolute w-100 h-100">
+            <div class="toggle-panel toggle-left position-absolute z-2 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="h1 text-white">Hello, Welcome!</h2>
+                <p class="mb-3 text-white">Don't have an account</p>
+                <button class="btn register-btn text-white border-1 border-white px-5 py-2">Register</button>
+            </div>
+
+            <div class="toggle-panel toggle-right position-absolute z-2 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="h1 text-white">Welcome Back</h2>
+                <p class="mb-3 text-white">Already have an account</p>
+                <button class="btn login-btn text-white border-1 border-white px-5 py-2">Login</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ~ Bootstrap js file -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ~ Custom JavaScript -->
+    <script src="./js/login.js"></script>
+</body>
+</html>

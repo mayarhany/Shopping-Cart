@@ -1,0 +1,42 @@
+@media (max-width: 576px) { 
+    .content-box{
+        height: calc(100vh - (48px * 2));
+    }
+    .form-box{
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+    }
+    .content-box.active .form-box{
+        right: 0;
+        bottom: 30%;
+    }
+    .toggle-box::before{
+        width: 100%;
+        height: 300%;
+        left: -12px;
+        top: -270%;
+    }
+    .content-box.active .toggle-box::before{
+        top: 70%;
+        left: 0;
+    }
+    .toggle-panel{
+        width: 100%;
+        height: 30%;
+    }
+    .toggle-panel.toggle-left{
+        top: 0;
+    }
+    .content-box.active .toggle-panel.toggle-left{
+        left: 0;
+        top: -30%;
+    }
+    .toggle-panel.toggle-right{
+        right: 0;
+        bottom: -30%;
+    }
+    .content-box.active .toggle-panel.toggle-right{
+        bottom: 0;
+    }
+}

@@ -1,0 +1,118 @@
+/* global styles */
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Inter", serif;
+    background-image: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utilities */
+.icon{
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.icon:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+/* login / register page styles */
+.content-box{
+    width: 850px;
+    height: 550px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.form-box{
+    color: #333;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s ease-in-out 1s, visibility 0s 1s;
+}
+.content-box.active .form-box{
+    right: 50%;
+}
+.form-box.register{
+    visibility: hidden;
+}
+.content-box.active .form-box.register{
+    visibility: visible;
+}
+.content-box.active .form-box.login{
+    visibility: hidden;
+}
+.form-group input{
+    padding: 7px 50px 7px 15px;
+}
+.form-group i{
+    right: 20px;
+    font-size: 16px;
+    color: #888;
+}
+.forgot-link{
+    color: #333;
+}
+.main-btn{
+    background-color: #7494ec;
+    transition: background-color 0.3s;
+}
+.main-btn:hover{
+    background-color: #7494eceb;
+}
+.content-box p{
+    font-size: 14px;
+}
+.toggle-box::before{
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -250%;
+    z-index: 2;
+    background-color: #7494ec;
+    border-radius: 150px;
+    transition: 1.5s ease-in-out;
+}
+.content-box.active .toggle-box::before{
+    left: 50%;
+}
+.toggle-panel{
+    width: 50%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.toggle-panel.toggle-left{
+    left: 0;
+    transition-delay: 1s;
+}
+.content-box.active .toggle-panel.toggle-left{
+    left: -50%;
+    transition-delay: 0.5s;
+}
+.toggle-panel.toggle-right{
+    right: -50%;
+    transition-delay: 0.5s;
+}
+.content-box.active .toggle-panel.toggle-panel.toggle-right{
+    right: 0;
+    transition-delay: 1s;
+}
