@@ -1,3 +1,8 @@
+/* variables */
+:root{
+    --primary-color: #7494ec;
+    --secondary-color: #eee;
+}
 /* global styles */
 ul{
     list-style-type: none;
@@ -9,13 +14,13 @@ a{
 }
 body{
     font-family: "Inter", serif;
-    background-color: #eee;
+    background-color: var(--secondary-color);
 }
 .bg-main{
-    background-color: #7494ec;
+    background-color: var(--primary-color);
 }
 .main-btn{
-    background-color: #7494ec;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 7px 20px;
     border: 1px solid transparent;
@@ -23,9 +28,9 @@ body{
     transition: border 0.3s,  background-color 0.3s;
 }
 .main-btn:hover{
-    border: 1px solid #7494ec;
+    border: 1px solid var(--primary-color);
     background-color: #fff;
-    color: #7494ec;
+    color: var(--primary-color);
 }
 header{
     padding-top: 68px;
