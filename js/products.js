@@ -15,7 +15,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/curology-DGH1u80sZik-unsplash.jpg'
     },
     {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/mathilde-langevin-2ObVEZxUDlc-unsplash.jpg'
     },
     {
     id: 4,
@@ -33,7 +33,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/kitera-dent-6g_pz58eCJg-unsplash.jpg'
     },
     {
     id: 5,
@@ -42,7 +42,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/duong-ngan-eabNbk2fnRw-unsplash.jpg'
     },
     {
     id: 6,
@@ -51,7 +51,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/lumin-1mp7rF7_j2I-unsplash.jpg'
     },
     {
     id: 7,
@@ -60,7 +60,7 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/taisiia-stupak-KP97dx0GOv8-unsplash.jpg'
     },
     {
     id: 8,
@@ -69,6 +69,6 @@ export const products = [
     quantity: 5,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, alias!',
     category: 'Category 1',
-    image: './images/alex-lvrs-mTw_GePuRUE-unsplash.jpg'
+    image: './images/laura-chouette-VmUW6uyp7R8-unsplash.jpg'
     },
 ]
