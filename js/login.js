@@ -29,10 +29,21 @@ function createUser(){
         }
     }
 }
+function validateInput(input, name){
+    if(input.value === ''){
+        input.style.setProperty('outline', '1px solid red');
+        let p = document.createElement('p')
+        p.appendChild(document.createTextNode(`${name} must be entered frist`));
+        input.parentNode.appendChild(p);
+        return false;
+    }
+}
 
 loginForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    createUser();
+    if(!validateInput(emailInput, 'Email') && !validateInput(passwordInput, 'Password')){        
+        e.preventDefault();
+        createUser();
+    }
 })
 
 regisrerBtn.addEventListener('click', () =>{
@@ -41,3 +52,11 @@ regisrerBtn.addEventListener('click', () =>{
 loginBtn.addEventListener('click', () =>{
     container.classList.remove('active');
 })
+// emailInput.addEventListener('keydown', () =>{
+//     emailInput.style.setProperty('outline', 'none');
+//     emailInput.parentNode.removeChild(document.querySelector('#email ~ p'));
+// })
+// passwordInput.addEventListener('keydown', () =>{
+//     passwordInput.style.setProperty('outline', 'none');
+//     passwordInput.parentNode.removeChild(document.querySelector('#password ~ p'));
+// })

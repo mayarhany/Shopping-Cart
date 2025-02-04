@@ -32,6 +32,9 @@ body{
     background-color: #fff;
     color: var(--primary-color);
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 header{
     padding-top: 68px;
 }

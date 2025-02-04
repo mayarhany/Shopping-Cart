@@ -68,6 +68,13 @@ body{
     font-size: 16px;
     color: #888;
 }
+.form-group p{
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: left;
+}
 .forgot-link{
     color: #333;
 }
@@ -78,7 +85,7 @@ body{
 .main-btn:hover{
     background-color: #7494eceb;
 }
-.content-box p{
+.content-box button + p{
     font-size: 14px;
 }
 .toggle-box::before{
