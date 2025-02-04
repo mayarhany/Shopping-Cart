@@ -52,11 +52,11 @@ regisrerBtn.addEventListener('click', () =>{
 loginBtn.addEventListener('click', () =>{
     container.classList.remove('active');
 })
-// emailInput.addEventListener('keydown', () =>{
-//     emailInput.style.setProperty('outline', 'none');
-//     emailInput.parentNode.removeChild(document.querySelector('#email ~ p'));
-// })
-// passwordInput.addEventListener('keydown', () =>{
-//     passwordInput.style.setProperty('outline', 'none');
-//     passwordInput.parentNode.removeChild(document.querySelector('#password ~ p'));
-// })
+emailInput.addEventListener('keydown', () =>{
+    emailInput.style.setProperty('outline', 'none');
+    emailInput.parentNode.removeChild(document.querySelector('#email ~ p'));
+})
+passwordInput.addEventListener('keydown', () =>{
+    passwordInput.style.setProperty('outline', 'none');
+    passwordInput.parentNode.removeChild(document.querySelector('#password ~ p'));
+})
