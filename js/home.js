@@ -6,7 +6,7 @@ const productList = document.getElementById("product-list");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function displayProducts() {
-  productList.innerHTML = products.map((product) =>
+    productList.innerHTML = products.map((product) =>
         `<div class="col-lg-3 col-md-4 col-6">
                 <div class="card shadow">
                     <img src="${product.image}" class="card-img-top" alt="Product 1" />

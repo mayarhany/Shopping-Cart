@@ -1,3 +1,4 @@
+// dom elements
 const container = document.querySelector('.content-box');
 const loginForm = document.getElementById('login-form');
 const emailInput = document.getElementById('email');
@@ -52,6 +53,8 @@ regisrerBtn.addEventListener('click', () =>{
 loginBtn.addEventListener('click', () =>{
     container.classList.remove('active');
 })
+
+// hendel the inputs
 emailInput.addEventListener('keydown', () =>{
     emailInput.style.setProperty('outline', 'none');
     emailInput.parentNode.removeChild(document.querySelector('#email ~ p'));

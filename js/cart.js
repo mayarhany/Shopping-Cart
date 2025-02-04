@@ -1,7 +1,10 @@
 import { updateCartCount } from "./cart.count.js";
 
+// dom elements
 const cartItems = document.getElementById('cart-items');
 const totalPrice = document.querySelector('.total-price');
+
+// update cart count when page loads
 updateCartCount();
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -37,8 +40,6 @@ function displayCartItems() {
         cartItems.innerHTML = `<h3 class="text-center">Cart is empty</h3>`;
         totalPrice.textContent = `0.00`;
     }
-
-
 }
 
 displayCartItems();
