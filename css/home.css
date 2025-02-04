@@ -27,11 +27,14 @@ body{
     background-color: #fff;
     color: #7494ec;
 }
-/* nav{
-    margin-bottom: 68px;
-} */
+header{
+    padding-top: 68px;
+}
 header .card img{
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+header .card span i{
+    color: rgb(237, 237, 34);
 }

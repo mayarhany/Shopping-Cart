@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <!-- ~ Main Style Sheet -->
     <link rel="stylesheet" href="./css/home.css" />
-    <title>Shopping Cart</title>
+    <title>Shopping Cart - Home</title>
 </head>
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-md  shadow navbar-light bg-light">
+    <nav class="navbar navbar-expand-md fixed-top shadow navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <h1 class="h3">Shopping Cart</h1>
@@ -36,7 +36,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./cart.html">Cart
                     <i class="fa-solid fa-cart-shopping position-relative fs-5">
-                        <span class="badge position-absolute start-100 top-0 translate-middle rounded-circle bg-main">3</span>
+                        <span class="badge position-absolute start-100 top-0 translate-middle rounded-circle bg-main">0</span>
                     </i>
                 </a>
               </li>
@@ -48,8 +48,10 @@
 
     <header class="container mt-4">
         <h2>Products</h2>
-        
+        <div class="row mt-1 gy-4" id="product-list">
+          
+        </div>
 
-        
+        <script src="./js/home.js" type="module"></script>
 </body>
 </html>
