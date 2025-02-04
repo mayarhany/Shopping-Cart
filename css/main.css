@@ -35,6 +35,6 @@ header .card img{
     height: 300px;
     object-fit: cover;
 }
-header .card span i{
+header .card .stars span i{
     color: rgb(237, 237, 34);
 }

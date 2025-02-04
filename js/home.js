@@ -1,14 +1,12 @@
-import {products} from "./products.js";
+import { products } from "./products.js";
+import { updateCartCount } from "./cart.count.js";
 
-const productList = document.getElementById('product-list');
-const badge = document.querySelector('.badge');
+const productList = document.getElementById("product-list");
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-
-
-function displayProducts(){
-    productList.innerHTML = products.map(product =>
+function displayProducts() {
+  productList.innerHTML = products.map((product) =>
         `<div class="col-lg-3 col-md-4 col-6">
                 <div class="card shadow">
                     <img src="${product.image}" class="card-img-top" alt="Product 1" />
@@ -24,35 +22,28 @@ function displayProducts(){
                                 <span><i class="fa-solid fa-star"></i></span>
                             </div>
                         </div>
-                        <a href="#" onclick="addToCart(${product.id})" class="main-btn d-inline-block w-100 text-center">Add to Cart</a>
+                        <a href="#" onclick="window.addToCart(${product.id})" class="main-btn d-inline-block w-100 text-center">Add to Cart</a>
                     </div>
                 </div>
             </div>`
-    ).join('');
+    )
+    .join("");
 }
 
+window.addToCart = (id) => {
+  const product = products.find((product) => product.id === id);
+  const existingItem = cart.find((item) => item.id === id);
 
-function addToCart(id){
-    const product = products.find(product => product.id === id);
-    const existingItem = cart.find(item => item.id === id);
-    
-    if(existingItem){
-        existingItem.quantity++;
-    }
-    else{
-        cart.push({...product, quantity: 1});
-    }
-    
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartCount();
-    // console.log(cart);
-}
-window.addToCart = addToCart;
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
 
-function updateCartCount(){
-    badge.textContent = cart.reduce((total, item) => total + item.quantity, 0);
-}
-window.updateCartCount = updateCartCount;
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  // console.log(cart);
+};
 
 displayProducts();
 updateCartCount();
