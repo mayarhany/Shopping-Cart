@@ -15,7 +15,7 @@ function createUser(){
     if (emailRegex.test(emailInput.value)) {
         if(users.find(user => user.email === emailInput.value)) {
             // console.log('found')
-            window.location.href = 'home.html';
+            window.location.href = '/Shopping-Cart/home.html';
         }
         else{
             let user = {
@@ -24,7 +24,7 @@ function createUser(){
             };
             localStorage.setItem('users', JSON.stringify(users));
             users.push(user);
-            window.location.href = 'home.html';
+            window.location.href = '/Shopping-Cart/home.html';
             // console.log('user created');
             // console.log(users);
         }
