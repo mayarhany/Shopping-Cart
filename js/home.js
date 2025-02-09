@@ -47,3 +47,6 @@ window.addToCart = (id) => {
 
 displayProducts();
 updateCartCount();
+
+console.log(window.location.href)
+console.log(window.location)
